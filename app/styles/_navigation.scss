@@ -1,0 +1,97 @@
+.header {
+    @extend .clearfix;
+    border-bottom: 1px solid #999;
+    background-color: $light-gray;
+}
+
+.logo {
+    
+    @include desktop {
+        float: left;
+    }
+}
+
+.navigation-wrapper,
+.navigation-menu {
+    @extend .clearfix;
+}
+
+.navigation-wrapper {
+    position: relative;
+    padding: 1em;
+}
+
+.navigation-menu-button {
+    color: #fff;
+    display: block;
+    float: right;
+    text-transform: uppercase;
+
+    @include desktop {
+        display: none;
+
+    }
+}
+
+.nav {
+
+    li {
+        display: block;
+        width: 100%;
+        margin: 0;
+
+        @include desktop {
+            display: inline;
+
+        }
+    }
+    
+    @include desktop {
+
+        float: left;
+
+        .nav-link > a {
+            float: left;
+            display: inline;
+            padding: 1em 2em;
+        }
+
+    }
+
+}
+
+.navigation-menu {
+
+    margin: 0;
+    padding: 0;
+    
+    @include desktop {
+        float: left;
+    }
+    
+}
+
+ul#navigation-menu {    
+    -webkit-transform-style: preserve-3d; 
+// stop webkit flicker
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    z-index: 9999;
+    @include desktop {
+        display:inline;
+    }
+}
+
+.nav-tools {
+
+    float: right;
+
+    @include desktop {
+        float: right;
+        margin: 1em;
+    }
+    
+}

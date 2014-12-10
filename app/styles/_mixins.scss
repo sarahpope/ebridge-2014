@@ -1,0 +1,30 @@
+// Hide Text
+
+@mixin hide-text {
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+  }
+}
+
+
+// Media Queries 
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

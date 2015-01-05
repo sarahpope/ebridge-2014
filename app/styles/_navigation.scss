@@ -1,13 +1,27 @@
 .header {
     @extend .clearfix;
-    border-bottom: 1px solid #999;
-    background-color: $light-gray;
+    
+    @include desktop {
+        padding: 1em;
+    }
+
+    .container {
+        width: 100%;
+    }
+
 }
 
 .logo {
-    
-    @include desktop {
-        float: left;
+    float: left;
+    padding: 1em;
+}
+
+a {
+    color: $dark-gray;
+    text-decoration: none;
+    &:hover {
+        color: $purple;
+        @include transition(color, .3s) 
     }
 }
 
@@ -22,10 +36,11 @@
 }
 
 .navigation-menu-button {
-    color: #fff;
+    color: $purple;
     display: block;
     float: right;
     text-transform: uppercase;
+    padding: 1em;
 
     @include desktop {
         display: none;
@@ -35,25 +50,54 @@
 
 .nav {
 
+    @extend .clearfix;
+
+    @include desktop {
+
+        float: left;
+        padding-top: 1em;
+
+    }
+
     li {
         display: block;
         width: 100%;
         margin: 0;
+        padding: 1em;
+        text-transform: uppercase;
+        border-top: 1px solid $light-gray;
+        font-weight: 600;
+        text-align: center;
 
         @include desktop {
-            display: inline;
+            display: inline-block;
+            width: auto;
+            padding: 0;
+            border: 0;
 
         }
     }
     
-    @include desktop {
+    li li {
+        border: 0;
+        text-transform: none;
 
-        float: left;
+        @include desktop {
+            display: none;
+        }
+    }
 
-        .nav-link > a {
+    .submenu {
+        padding: 0;
+        background-color: $light-gray;
+    }
+
+    .nav-link > a { 
+
+        @include desktop {
             float: left;
             display: inline;
-            padding: 1em 2em;
+            margin: 1em 2em;
         }
 
     }
@@ -86,12 +130,24 @@ ul#navigation-menu {
 }
 
 .nav-tools {
+    display: block;
+    background-color: $purple;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
 
-    float: right;
+    a {
+        color: #fff;
+        @include desktop {
+            color: $dark-gray;
+
+        }
+    }
 
     @include desktop {
         float: right;
-        margin: 1em;
+        margin-top: 1em;
+        background-color: #fff;
     }
     
 }

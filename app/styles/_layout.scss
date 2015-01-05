@@ -1,0 +1,36 @@
+.container {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    @include outer-container;
+}
+
+@include desktop {
+
+    .full {
+        @include span-columns(12);
+    }
+
+    .half {
+        @include span-columns(6);
+    }
+
+    .third {
+        @include span-columns(4);
+    }
+
+    .fourth {
+        @include span-columns(3);
+        @include omega(4n);
+    }
+
+
+    .pull-right {
+        float: right;
+    }
+
+}
+

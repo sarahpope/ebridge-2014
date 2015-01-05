@@ -1,0 +1,159 @@
+.home { 
+    section {
+        padding: 2em 0;
+    }
+    .dark-bg {
+        background-color: $purple;
+        color: #fff;
+    }
+
+    h3 {
+        font-family: $serif;
+    }
+
+    .testimonials {
+        padding: 4em 0;
+    } 
+
+    p {
+        line-height: 2em;
+    }  
+
+}
+
+
+// Hero
+
+.hero {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(77, 44, 74, .9)
+    ),
+    url("../images/hero-bg.jpg") fixed 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align : center;
+    min-height: 24em;
+
+    @include desktop {
+        height: 640px;
+    }
+
+    h1 {
+        font-size: 2em;
+         @include desktop {
+            font-size: 4rem;
+        }
+    }
+
+    h2 {
+        font-size: 1em;
+        font-family: $sans-serif;
+        line-height: 1.75em;
+        font-weight: 400;
+
+        @include desktop {
+            font-size: 1.5rem;
+            margin-top: 1em;
+        }
+    }
+
+    .button {
+        margin: 1em .5em;
+        @include desktop {
+            font-size: 1.25em;
+        }
+    }
+
+    .button-secondary {
+        color: #fff;
+        border-color: #fff;
+        &:hover {
+            background-color: $orange;
+            border-color: $orange;
+        }
+    }
+}
+
+.hero-copy {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    width: 95%;
+    @include desktop {
+        width: 60%;
+    }
+}
+
+// Main Features
+
+.main-features {
+    background-color: $light-gray;
+    color: darken($light-gray, 60%);
+    text-align: center;
+
+    span {
+        display: block;
+    }
+}
+
+
+// Benefits
+
+.benefits {
+    
+    .row {
+        padding: 2em 0;
+    }
+
+}
+
+.benefits-copy {
+    margin-top: 1em;
+    text-align: center;
+    @extend %vertical-align;
+    @include desktop {
+        text-align: left;
+    }
+}
+
+.sellers {
+
+    @include desktop {
+        .benefits-img {
+            margin-right: 0;
+            float: right;
+        }
+    }
+}
+
+
+// Testamonials
+.testimonials {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.275em;
+
+    span {
+        display: block;
+        margin-top: 1em;
+    }
+}   
+
+// Call-To-Action 
+.call-to-action {
+    background-color: #E38A44;
+    color: #fff;
+    text-align: center;
+}
+
+// Contact Us
+
+.contact-us {
+    background-color: $light-gray;
+}

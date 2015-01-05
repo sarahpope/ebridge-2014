@@ -2,7 +2,7 @@
 $sans-serif: 'Open Sans', sans-serif;
 $serif: 'Roboto Slab', serif;
 $base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$header-font-family: $serif;
 
 // Sizes
 $base-font-size: 1em;
@@ -15,24 +15,27 @@ $medium-screen: 640em;
 $large-screen: 860em;
 
 // Colors
+$purple: #4D2C4A;
+$light-purple: #D7CDD9;
+$orange: #F27420;
 $blue: #477DCA;
 $dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #DDD;
+$medium-gray: #948E8D;
+$light-gray: #ededed;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
 // Background Color
-$base-background-color: white;
+$base-background-color: #fff;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-accent-color: $purple;
 
 // Link Colors
 $base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
+$hover-link-color: darken($base-accent-color, 10);
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 

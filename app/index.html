@@ -19,6 +19,7 @@
     <!-- endbuild -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -28,10 +29,10 @@
         
       <header class="header">
         
-        <div class="navigation-wrapper">
+        <div class="navigation-container container">
 
           <a href="#" class="logo">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+            <img src="../images/logo.png" alt="Logo Image" width="150">
           </a>
 
           <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
@@ -62,26 +63,32 @@
             </ul>
           </nav>
           <div class="nav-tools">
-            <a href="#" class="login">Log In</a>
+            <a href="#" class="login button button-secondary">Log In</a>
           </div>
 
-        </div><!-- END .navigation-wrapper -->
+        </div><!-- END .navigation-container -->
 
         </header>
 
         <section class="hero">
 
-          <div class="wrapper">
+          <div class="container">
 
-            <div class="hero-copy">
-            
-            <h1>Fully managed purchasing solutions</h1>
+            <div class="row">
 
-            <h2>eBridge provides fully managed purchasing services, creating efficiencies and delivering hard dollar savings to our customer's bottom line.</h2>
+              <div class="hero-copy column">
+              
+              <h1>Fully managed purchasing solutions</h1>
 
-            <a href="#" class="button">Watch Demo</a>
+              <h2>eBridge provides fully managed purchasing services, creating efficiencies and delivering hard dollar savings to our customer's bottom line.</h2>
 
-            </div>
+              <a href="#" class="button button-secondary">Watch Demo</a>
+
+              <a href="#" class="button button-secondary">Sign Up</a>
+
+              </div>
+
+            </div><!-- END .row -->
 
           </div>    
 
@@ -89,12 +96,19 @@
 
         <section class="main-features">
 
-          <div class="wrapper">
-          
-            <p><span>#</span>Feature One</p>
-            <p><span>#</span>Feature Two</p>
-            <p><span>#</span>Feature Tree</p>
-            <p><span>#</span>Feature Four</p>
+          <div class="container">
+
+            <div class="row">
+            
+              <p class="column fourth"><span>#</span>Average savings of 14% versus established budget</p>
+
+              <p class="column fourth"><span>#</span>Niche market in procurement technology</p>
+
+              <p class="column fourth"><span>#</span>Average of 6 participating suppliers per event</p>
+
+              <p class="column fourth"><span>#</span>No up-front cost</p>
+
+            </div>
 
           </div>
 
@@ -102,45 +116,83 @@
 
         <section class="benefits">
 
-          <div class="wrapper">
-          
-            <div class="buyers">
-              
-              <img src="http://fillmurray.com/g/400/300" alt="#">
+          <div class="container">
 
-              <div class="benefits-copy">
+            <div class="buyers">
+
+              <div class="row">
+
+              <div class="benefits-img column half module">
+
+                <img src="../images/buyer-view.png" alt="#">
+
+              </div>
+
+              <div class="benefits-copy column half module">
                 
                 <h3>Buyers will benefit by blah blah blah</h3>
 
-                <h4>Bacon ipsum dolor amet short loin shoulder kevin, beef ribs short ribs salami landjaeger. Porchetta rump sausage, ham hock tenderloin flank ground round shankle kielbasa chuck filet mignon sirloin meatball. Filet mignon ribeye drumstick, t-bone chicken biltong turducken short loin.</h4>
+                <p>Bacon ipsum dolor amet short loin shoulder kevin, beef ribs short ribs salami landjaeger. Porchetta rump sausage, ham hock tenderloin flank ground round shankle kielbasa chuck filet mignon sirloin meatball. Filet mignon ribeye drumstick, t-bone chicken biltong turducken short loin.</p>
+
+                <a href="#" class="button button-secondary">Learn More</a>
 
               </div>
 
-            </div>
+            </div><!-- END .row -->
+
+          </div>
 
             <div class="sellers">
-              
-              <img src="http://fillmurray.com/g/400/300" alt="#">
 
-              <div class="benefits-copy">
+              <div class="row">
                 
-                <h3>Sellers will benefit by blah blah blah</h3>
+                <div class="benefits-img column half module">
 
-                <h4>Bacon ipsum dolor amet short loin shoulder kevin, beef ribs short ribs salami landjaeger. Porchetta rump sausage, ham hock tenderloin flank ground round shankle kielbasa chuck filet mignon sirloin meatball. Filet mignon ribeye drumstick, t-bone chicken biltong turducken short loin.</h4>
+                  <img src="../images/seller-view.png" alt="#">
+
+                </div>
+
+                <div class="benefits-copy column half module">
+                  
+                  <h3>Sellers will benefit by blah blah blah</h3>
+
+                  <p>Bacon ipsum dolor amet short loin shoulder kevin, beef ribs short ribs salami landjaeger. Porchetta rump sausage, ham hock tenderloin flank ground round shankle kielbasa chuck filet mignon sirloin meatball. Filet mignon ribeye drumstick, t-bone chicken biltong turducken short loin.</p>
+
+                  <a href="#" class="button button-secondary">Learn More</a>
+
+                </div>
 
               </div>
 
             </div>
 
-          </div><!-- END .wrapper -->
+          </div><!-- END .container -->
 
         </section>
 
-      <section class="testimonials">
+      <section class="testimonials dark-bg">
 
-        <div class="wrapper">
+        <div class="container">
+
+          <div class="row">
+          
+            <p class="module">I just want to tell you guys that I love you. This business has changed my life and I am loving procurement now! Thank you! <span>– Sandy Rivers, Google</span></p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="call-to-action">
         
-          <p>I just want to tell you guys that I love you. This business has changed my life and I am loving procurement now! Thank you! <span>– Sandy Rivers, Google</span></p>
+        <div class="container">
+          
+          <div class="row">
+            
+            <h4>Ready to get started? Call (877) 245-8880 today!</h4>
+
+          </div>
 
         </div>
 
@@ -148,41 +200,28 @@
 
       <section class="contact-us">
 
-        <div class="wrapper">
+        <div class="container">
+
+        <div class="row">
         
-        <div class="contact-info">
-          
-          <h3>Don't Wait, Let's Get In Touch</h3>
-
-          <h4>Meatloaf prosciutto short loin sirloin ham hock ground round capicola cupim strip steak frankfurter filet mignon biltong. Chicken jowl pancetta, cow beef ribs capicola meatloaf doner swine boudin tri-tip pork loin.</h4>
-
-          <p>Call</p>
-          <p>Email</p>
-          <p>Connect</p>
-          <p>Visit</p>
-
-        </div>
-
-        <div class="contact-form">
-          
-          <form action="">
+          <div class="contact-info">
             
-            <label for="Name">Name</label>
-            <input name="name">
+            <h3>Don't Wait, Let's Get In Touch</h3>
 
-            <label for="Email">Email</label>
-            <input name="email">
+            <p>Meatloaf prosciutto short loin sirloin ham hock ground round capicola cupim strip steak frankfurter filet mignon biltong. Chicken jowl pancetta, cow beef ribs capicola meatloaf doner swine boudin tri-tip pork loin.</p>
 
-            <label for="Message">Message</label>
-            <textarea name="message" cols="30" rows="10"></textarea>
+            <p>Call</p>
+            <p>Email</p>
+            <p>Connect</p>
+            <p>Visit</p>
 
-          </form>
+          </div>
 
         </div>
 
-        </div><!-- END .wrapper -->
+        </div><!-- END .container -->
 
-      </section>
+      </section><!-- END .contact-us -->
       
     </div><!-- END .home -->
 
